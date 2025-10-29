@@ -1,26 +1,45 @@
-# TxHashxVerification — Ethereum Transaction Verifier
+# TxHashxVerification
 
-A simple Node.js CLI tool to verify Ethereum transaction hashes, showing details such as gas spent, from/to addresses, decoded method (if available), and basic classification (ETH transfer, ERC20 transfer, contract interaction).
+Developer-focused Ethereum transaction verification tool.
 
-### Usage 
+## Overview
+A Node.js CLI tool to fetch Ethereum transaction details including: from/to addresses, gas usage, value, decoded input methods, and basic activity classification.
 
-1. Clone this repo and install dependencies:
-   ```bash
-   npm install
-   ```
+## Features
+- Verify transaction hash on Ethereum mainnet or testnets
+- Output JSON with detailed transaction info
+- Decode ERC20 Transfer events
+- Classify activity: ETH transfer, ERC20 transfer, contract interaction
 
-2. Set your RPC URL in `.env` (or use Infura/Alchemy key):
-   ```bash
-   RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_KEY
-   ```
+## Installation
+```bash
+git clone <repo-url>
+cd TxHashxVerification
+npm install
+```
+Set RPC_URL in `.env`:
+```
+RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_KEY
+```
 
-3. Run the script:
-   ```bash
-   node index.js --tx <your_tx_hash>
-   ```
+## Usage
+```bash
+node index.js --tx <transaction_hash>
+```
 
-It will print a JSON summary of transaction details.
+## Sample Output
+```json
+{
+  "txHash": "0x...",
+  "blockNumber": 1234567,
+  "status": "Success",
+  "from": "0x...",
+  "to": "0x...",
+  "valueEth": "0.5",
+  "gasUsed": "21000",
+  "activity": "ETH Transfer"
+}
+```
 
----
-**Author:** Mr. Rashid  
-**License:** MIT
+## License
+MIT
