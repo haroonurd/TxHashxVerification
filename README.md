@@ -1,7 +1,7 @@
 # TxHashxVerification
 
 Developer-focused Ethereum transaction verification tool.
-
+ 
 ## Overview
 A Node.js CLI tool to fetch Ethereum transaction details including: from/to addresses, gas usage, value, decoded input methods, and basic activity classification.
 
