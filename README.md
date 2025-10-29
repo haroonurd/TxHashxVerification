@@ -2,7 +2,7 @@
 
 A simple Node.js CLI tool to verify Ethereum transaction hashes, showing details such as gas spent, from/to addresses, decoded method (if available), and basic classification (ETH transfer, ERC20 transfer, contract interaction).
 
-### Usage
+### Usage 
 
 1. Clone this repo and install dependencies:
    ```bash
