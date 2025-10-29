@@ -1,17 +1,26 @@
-Usage (README snippet)
+# TxHashxVerification — Ethereum Transaction Verifier
 
-Create a new folder and place the files above into it (maintain abi/common.json).
+A simple Node.js CLI tool to verify Ethereum transaction hashes, showing details such as gas spent, from/to addresses, decoded method (if available), and basic classification (ETH transfer, ERC20 transfer, contract interaction).
 
-cp .env.example .env and set RPC_URL (Infura/Alchemy or other).
+### Usage
 
-npm install
+1. Clone this repo and install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run: node index.js --tx 0xYOURTXHASH
+2. Set your RPC URL in `.env` (or use Infura/Alchemy key):
+   ```bash
+   RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_KEY
+   ```
 
-The script prints a JSON summary and additional decoded ERC20 Transfer lines when present.
+3. Run the script:
+   ```bash
+   node index.js --tx <your_tx_hash>
+   ```
 
-Notes & Next steps
+It will print a JSON summary of transaction details.
 
-This is a starting point — you can extend the ABI database, add ENS lookups, decode more event types, map well-known contracts (Uniswap, Sushi, 1inch) for richer classification, and add unit tests.
-
-Consider adding a web UI (React) or GitHub Actions for automated scanning.
+---
+**Author:** Mr. Rashid  
+**License:** MIT

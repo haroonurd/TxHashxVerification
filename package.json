@@ -1,0 +1,19 @@
+{
+  "name": "txhashx-verification",
+  "version": "1.0.0",
+  "description": "Simple Ethereum tx hash verifier returning details and activity classification",
+  "main": "index.js",
+  "bin": {
+    "txverify": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Mr. Rashid",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.0.0",
+    "dotenv": "^16.0.0",
+    "yargs": "^17.0.0"
+  }
+}
