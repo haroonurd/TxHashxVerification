@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import { ethers } from 'ethers';
 import fs from 'fs'; 
 import path from 'path';
-import yargs from 'yargs/yargs';
+import yargs from 'yargs/yargs'; 
 import { hideBin } from 'yargs/helpers';
 
 dotenv.config();
