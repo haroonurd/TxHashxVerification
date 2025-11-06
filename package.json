@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple Ethereum tx hash verifier returning details and activity classification",
   "main": "index.js",
-  "bin": {
+  "bin": { 
     "txverify": "index.js"
   },
   "scripts": {
